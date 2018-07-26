@@ -2,6 +2,14 @@
 
 Webpack configuration is production ready.
 
+### To run locally
+Run `npm start` within `frontend` directory and then
+
+Activate your virtualenv and run `python manage.py runserver`.
+
+Hot reload is also setup, so updates should automatically be updated as usual.
+
+
 ### To prepare app for production
 Create `settings_prod.py` in the root directory and put the below code in it:
 
