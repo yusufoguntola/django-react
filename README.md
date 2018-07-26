@@ -3,7 +3,7 @@
 Webpack configuration is production ready.
 
 ### To prepare app for production
-Create `settings_prod.py` in the root directory and the below code in it:
+Create `settings_prod.py` in the root directory and put the below code in it:
 
 ```python
 
@@ -22,7 +22,9 @@ WEBPACK_LOADER = {
 
 ```
 
-Then create `assets` folder in the root directory and run `npm run build`.
+Then create `assets` folder in the root directory and run `npm run build` (feel free to run build on the server to reduce file size to to push).
+
+Manually run `python manage.py collectstatic` on the production server if need be.
 
 Everything should be fine now!!!
 
