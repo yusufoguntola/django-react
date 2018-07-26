@@ -1,0 +1,21 @@
+//Webpack is production ready
+
+//For production:
+
+//Create a new production settings file and put this in it:
+
+from .settings import *
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "assets"),
+]
+
+WEBPACK_LOADER = {
+    'DEFAULT': {
+            'BUNDLE_DIR_NAME': 'bundles/',
+            'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.prod.json'),
+        }
+}
+
+//create assets folder
+//run: npm run build
