@@ -11,7 +11,7 @@ Hot reload is also setup, so updates should automatically be updated as usual.
 
 
 ### To prepare app for production
-Create `settings_prod.py` in the root directory and put the below code in it:
+Create `settings_prod.py` in the project directory at the same level with `settings.py` and put the below code in it:
 
 ```python
 
